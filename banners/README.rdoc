@@ -1,28 +1,15 @@
-== README
+== Installation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+By just clonning this repository (git clone https://github.com/dpenas/banners_assesment.git) and running rails
+on this project (bin/rails s) you should be able to see the banners on the webpage (for example:
+localhost:3000/campaigns/10).
 
-Things you may want to cover:
+== Considerations
 
-* Ruby version
+I've used the MVC model for this project, so all the logic is located on the banner's model (banner.rb).
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+From the clicks file I get the clicks and banners from each campaign (parameter that the user introduces). This will
+be useful to obtain the number of clicks that each banner has received.
+The banners used by a campaign are shown in the impressions' file. With this information we'll be able to know the revenue that each click
+has generated and, therefore, the banners that have been more profitable with each click. I've parsed that information
+and showed it as the exercise specified.
